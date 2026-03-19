@@ -14,6 +14,10 @@ criar um rotina de estudo/guia para auxiliar no estudo
 - usuario pode mudar algumas coisa no guia, como: videos sugeridos ou liguagem
 - usuario pode mostrar q esta concluindo os exercios (como no duolingo)
 - (pode adicionar mais ideias)
+- usuario faz um cadastro ou login para usar o site - manel
+- usuario pode escolher a aba de exercicios e a aba de videos - manel 
+- o usuario pode enviar videos (como no youtube) - manel
+- o usuario pode ver o ranking de exercicios - manel
 
 ### requisitos nao-funcionais
 
@@ -26,5 +30,9 @@ criar um rotina de estudo/guia para auxiliar no estudo
 - sistema registrar e guardas os ex concluidos por usuario
 *logica do requisito*: (add dps)
 - (pode adicionar mais ideias)
+- o sistema calcula os pontos para adicionar no ranking
+*logica do requisito*: (add dps)
+- o sistema deve rodar um carrossel de videos na aba de conteudos
+*logica do requisito*: (add dps)
 
 (requistos q estão sendo feito, marca com seu nome, ex: "requisto tal - davyson", adicionar mais ideias e explicar elas, escrever logica, etc)
