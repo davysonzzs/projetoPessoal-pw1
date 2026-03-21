@@ -14,7 +14,7 @@ criar um rotina de estudo/guia para auxiliar no estudo
 - usuario pode mudar algumas coisa no guia, como: videos sugeridos ou liguagem - davyson
 - usuario pode mostrar q esta concluindo os exercios (como no duolingo) - davyson
 - (pode adicionar mais ideias)
-- usuario faz um cadastro ou login para usar o site - manel
+- ~~usuario faz um cadastro ou login para usar o site~~
 - usuario pode escolher a aba de exercicios e a aba de videos - manel 
 - o usuario pode enviar videos (como no youtube) - manel
 - o usuario pode ver o ranking de exercicios - manel
