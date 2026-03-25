@@ -70,3 +70,92 @@ const stageCss = {
         }    
         `, "Link para documentação: https://www.w3schools.com/css/css_selectors.asp", "Exercicio disponivel: https://pt.anotepad.com/note/read/qiqkh8h5"],
 }
+
+const stageJs = {
+    "stage 1: introdução": [
+        `
+        O que o JavaScript pode fazer?
+
+        JavaScript é a linguagem de programação da web.
+        Ele pode calcular, manipular e validar dados.
+        Ele pode atualizar e alterar tanto HTML quanto CSS. 
+
+        Um dos muitos métodos HTML em JavaScript é getElementById().
+
+        O exemplo abaixo "encontra" um elemento HTML (com id="demo"), e altera o conteúdo do elemento (innerHTML) para "Olá JavaScript": 
+        document.getElementById("demo").innerHTML = "Hello JavaScript";
+        
+        JavaScript pode alterar estilos HTML (CSS)
+
+        Alterar o estilo de um elemento HTML é uma variante de alterar o próprio HTML. atributo: 
+        document.getElementById("demo").style.fontSize = "35px"; 
+        `, "Link para documentação: https://www.w3schools.com/js/js_intro.asp", "Sem exercicio Disponivel"],
+    "Stage 2: Sintaxe":[
+        `
+        Regras de sintaxe
+        A sintaxe são as regras que definem como os programas devem ser construídos:
+        // Declare as variveis:
+        let x = 5;
+        let y = 6;
+
+        // Calcule:
+        let z = x + y;
+
+        // Eu sou um comentario, eu não sou nada 
+
+        Valores JavaScript
+
+        A sintaxe do JavaScript define dois tipos de valores:
+
+        Literais (Valores fixos)
+        Variáveis ​​(Valores das variáveis)
+
+        Literais em JavaScript
+
+        As regras de sintaxe mais importantes para literais (valores fixos) são:
+        Os números podem ser escritos com ou sem decimais:
+        Exemplo
+        10.50
+        1001 
+
+        strings são textos escritos entre aspas duplas ou simples:
+        Exemplo
+        "John Doe"
+
+        'John Doe'
+
+        Palavras-chave JavaScript
+
+        do JavaScript As palavras-chave são usadas para definir as ações a serem executadas.
+
+        O let e constAs palavras-chave criam variáveis:
+        Exemplo
+        let x = 5;
+
+        const fname = "John";
+
+        ariáveis ​​em JavaScript
+
+        Variáveis ​​são contêineres para armazenar valores de dados .
+
+        As variáveis ​​devem ser identificadas com nomes únicos .
+        Exemplo
+        // Define x as a variable
+        let x;
+
+        // Assign the value 6 to x
+        x = 6;
+
+        Operadores JavaScript
+
+        em JavaScript Os operadores de atribuição (=) atribuem valores a variáveis:
+        Exemplo
+        let x = 5;
+        let y = 6;
+        let sum = x + y;
+
+        JavaScript usa operadores aritméticos ( + - * / ) para calcular valores:
+        Exemplo
+        5 * 10
+        `, "link para documentação: https://www.w3schools.com/js/js_syntax.asp", " exercicio disponivel: https://pt.anotepad.com/note/read/t237ic9d"]
+}
