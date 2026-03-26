@@ -245,3 +245,15 @@ const stageHtml = {
             `, "link para documentação: https://www.w3schools.com/html/html_basic.asp", "Exercicio disponivel: https://pt.anotepad.com/note/read/p2qqs34x"]
 }
 
+function criarGuia(curso){
+    //somente para não recarregar a pagina
+    document.querySelector("form").addEventListener('submit', (event) =>{
+        event.preventDefault()
+        console.log("Envio feito")
+    })
+    //montar guia com base nas const a seguir
+    const metodologia = document.getElementById("metedologia").value
+    const professor = document.getElementById("professores").value
+    const tempoDisponivelParaEstudo = document.getElementById('tempoDisponivel').value
+    
+}
