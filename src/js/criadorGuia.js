@@ -1,6 +1,6 @@
 //variveis onde ficam stages
 const stageCss = {
-    "stage 1: Introdução": [
+    stage1Introdução: [
     `CSS é a linguagem que usamos para estilizar uma página da Web.
     CSS significa Cascading Style Sheets (Folhas de Estilo em Cascata).
     O CSS descreve como os elementos HTML devem ser exibidos na tela. papel, ou em outros meios
@@ -25,8 +25,8 @@ const stageCss = {
     font-family: verdana;
     font-size: 20px;
     }
-`, "link da documentação: https://www.w3schools.com/css/css_intro.asp", "sem exercio disponivel"],
-    "stage 2: Seletores": [
+`, "link da documentação: https://www.w3schools.com/css/css_intro.asp", "sem exercio disponivel", 600000],
+    stage2Seletores: [
         `
         Os seletores CSS são usados ​​para "encontrar" (ou selecionar) os elementos HTML que você deseja selecionar. quero estilizar.
         Podemos dividir os seletores CSS em cinco categorias:
@@ -68,7 +68,7 @@ const stageCss = {
         text-align: center;
         color: red;
         }    
-        `, "Link para documentação: https://www.w3schools.com/css/css_selectors.asp", "Exercicio disponivel: https://pt.anotepad.com/note/read/qiqkh8h5"],
+        `, "Link para documentação: https://www.w3schools.com/css/css_selectors.asp", "Exercicio disponivel: https://pt.anotepad.com/note/read/qiqkh8h5", 900000],
 }
 
 const stageJs = {
@@ -89,7 +89,7 @@ const stageJs = {
 
         Alterar o estilo de um elemento HTML é uma variante de alterar o próprio HTML. atributo: 
         document.getElementById("demo").style.fontSize = "35px"; 
-        `, "Link para documentação: https://www.w3schools.com/js/js_intro.asp", "Sem exercicio Disponivel"],
+        `, "Link para documentação: https://www.w3schools.com/js/js_intro.asp", "Sem exercicio Disponivel", 600000],
     "Stage 2: Sintaxe":[
         `
         Regras de sintaxe
@@ -157,7 +157,7 @@ const stageJs = {
         JavaScript usa operadores aritméticos ( + - * / ) para calcular valores:
         Exemplo
         5 * 10
-        `, "link para documentação: https://www.w3schools.com/js/js_syntax.asp", " exercicio disponivel: https://pt.anotepad.com/note/read/t237ic9d"]
+        `, "link para documentação: https://www.w3schools.com/js/js_syntax.asp", " exercicio disponivel: https://pt.anotepad.com/note/read/t237ic9d", 1500000]
 }
 
 const stageHtml = {
@@ -204,7 +204,7 @@ const stageHtml = {
         O elemento HTML abrange tudo desde a tag de abertura até a tag de fechamento:
         < h1 > Meu Primeiro título</h1> 
         <p> Meu primeiro parágrafo </p> 
-        `, "Link para documentação: https://www.w3schools.com/html/html_intro.asp", "Exercicio disponivel: https://pt.anotepad.com/note/read/qwsai3wp"],
+        `, "Link para documentação: https://www.w3schools.com/html/html_intro.asp", "Exercicio disponivel: https://pt.anotepad.com/note/read/qwsai3wp", 480000],
         "stage 2: Basico": [
             `
             Títulos HTML
@@ -242,8 +242,10 @@ const stageHtml = {
 
             Exemplo
             <img src="Codak.jpg" alt="Codak-logo" width="104" height="142"> 
-            `, "link para documentação: https://www.w3schools.com/html/html_basic.asp", "Exercicio disponivel: https://pt.anotepad.com/note/read/p2qqs34x"]
+            `, "link para documentação: https://www.w3schools.com/html/html_basic.asp", "Exercicio disponivel: https://pt.anotepad.com/note/read/p2qqs34x", 600000]
+
 }
+//os stages são um obj, na chave ha um array onde [0] é o descrição onde o aluno vai ler, [1] link pra documentação, [2] o exercicio e o [3] o tempo exigido para aql stage
 
 function criarGuia(curso){
     //somente para não recarregar a pagina
@@ -255,5 +257,12 @@ function criarGuia(curso){
     const metodologia = document.getElementById("metedologia").value
     const professor = document.getElementById("professores").value
     const tempoDisponivelParaEstudo = document.getElementById('tempoDisponivel').value
-    
+    // seprando o tempo
+    let tempoDeEstudoParaStage = 0
+    if(curso == "css"){
+        tempoDeEstudoParaStage = tempoDisponivelParaEstudo - stageCss.stage1Introdução[3]
+        if(tempoDeEstudoParaStage > stageCss.stage2Seletores[3]){
+            
+        } 
+    }
 }
