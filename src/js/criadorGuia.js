@@ -1,3 +1,5 @@
+
+
 //variveis onde ficam stages
 const stageCss = {
     stage1Introdução: [
@@ -257,12 +259,53 @@ function criarGuia(curso){
     const metodologia = document.getElementById("metedologia").value
     const professor = document.getElementById("professores").value
     const tempoDisponivelParaEstudo = document.getElementById('tempoDisponivel').value
-    // seprando o tempo
-    let tempoDeEstudoParaStage = 0
-    if(curso == "css"){
-        tempoDeEstudoParaStage = tempoDisponivelParaEstudo - stageCss.stage1Introdução[3]
-        if(tempoDeEstudoParaStage > stageCss.stage2Seletores[3]){
-            
-        } 
-    }
+    let tempoDisponivelCorventido = tempoDisponivelParaEstudo % 60
+
+    //Exibir guia
+    const divResultado = document.createElement("div").setAttribute("id", "Div-pai-Guia")
 }
+
+let ms
+let intervalo
+
+function cronometro(tempo){
+    ms = tempo
+    cronometroDiplay()
+}
+
+function cronometroDiplay(){
+    let segundosTotais = Math.floor(ms % 60)
+    let minutosTotais = Math.floor((ms % 3600) / 60)
+    let horas = Math.floor(ms / 3600)
+    const hDisplay = horas < 10 ? '0' + horas : horas
+    const mDisplay = minutosTotais < 10 ? '0' + minutosTotais : minutosTotais
+    const sDisplay = segundosTotais < 10 ? '0' + segundosTotais : segundosTotais
+    document.getElementById('div').innerHTML = `${hDisplay}:${mDisplay}:${sDisplay} <br> <button onclick="iniciar()">iniciar</button> <button onclick="finalizar()">finalizar estudo</button>`
+}
+
+function iniciar() {
+    if (intervalo) return 
+
+    intervalo = setInterval(() => {
+        if (ms <= 0) {
+            clearInterval(intervalo)
+            intervalo = null
+            return;
+        }
+        
+        ms--
+        cronometroDiplay()
+    }, 1000);
+}
+
+function finalizar(){
+    ms = 0
+    cronometroDiplay()  
+    alert("estudo finalizado!")
+}
+
+cronometro(60)
+
+
+
+
