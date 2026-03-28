@@ -249,6 +249,11 @@ const stageHtml = {
 }
 //os stages são um obj, na chave ha um array onde [0] é o descrição onde o aluno vai ler, [1] link pra documentação, [2] o exercicio e o [3] o tempo exigido para aql stage
 
+const professores = {
+    dayson:[],
+    manel:[],
+}
+
 function criarGuia(curso){
     //somente para não recarregar a pagina
     document.querySelector("form").addEventListener('submit', (event) =>{
@@ -299,9 +304,11 @@ function iniciar() {
 }
 
 function finalizar(){
-    ms = 0
-    cronometroDiplay()  
-    alert("estudo finalizado!")
+    if(intervalo !== null){
+        ms = 0
+        cronometroDiplay()  
+        alert("estudo finalizado!")
+    }
 }
 
 cronometro(60)
