@@ -19,7 +19,7 @@
             <p>é a linguagem utilizada para estilizar e definir o visual de documentos HTML. <br>
                 Ela controla cores, fontes, tamanhos, espaçamentos e layouts, <br> permitindo criar designs profissionais e responsivos para diferentes dispositivos. <br>
                 CSS separa o conteúdo (HTML) da apresentação (CSS), facilitando  <br> a manutenção e agilizando o carregamento</p>
-            <button onclick="abrirForm('forms')">Aprender</button>
+            <button onclick="abrirForm('forms')" id="btnForms">Aprender</button>
         </div>
         <div class="formulario" id="forms" style="display: none;">
             <form>
@@ -35,7 +35,7 @@
                 </select> <br>
                 <label>Tempo Disponivel</label> <br>
                 <input type="datetime" id="tempoDisponivel"> <br>
-                <input type="submit" value="aprender" id="enviar">
+                <input type="submit" value="aprender" id="enviar" onclick="criarGuia('css')">
             </form>
         </div>
 

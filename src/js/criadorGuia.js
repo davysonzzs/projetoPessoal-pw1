@@ -1,19 +1,21 @@
-
-
 //variveis onde ficam stages
-const stageCss = {
-    stage1Introdução: [
-    `CSS é a linguagem que usamos para estilizar uma página da Web.
-    CSS significa Cascading Style Sheets (Folhas de Estilo em Cascata).
-    O CSS descreve como os elementos HTML devem ser exibidos na tela. papel, ou em outros meios
-    O CSS economiza muito trabalho. Ele pode controlar o layout de várias páginas da web simultaneamente
-    Folhas de estilo externas são armazenadas em arquivos CSS.
+const css = {
+    stage1: [
+    ` <h1 onclick="abrirForm('stage1Css')" style="cursor: pointer;">Stage 1: Introdução</h1>
+    <span id="stage1Css" style="display: none; margin: 15px 0;">
+    <h2> CSS é a linguagem que usamos para estilizar uma página da Web. </h2> <br>
+    CSS significa Cascading Style Sheets (Folhas de Estilo em Cascata). <br>
+    O CSS descreve como os elementos HTML devem ser exibidos na tela. papel, ou em outros meios <br>
+    O CSS economiza muito trabalho. Ele pode controlar o layout de várias páginas da web simultaneamente <br>
+    Folhas de estilo externas são armazenadas em arquivos CSS. <br>
 
-    Por que usar CSS?
-    O CSS é usado para definir estilos para suas páginas da web, 
-    incluindo o design e o layout. e variações na exibição para diferentes dispositivos e tamanhos de tela.
+    <h2> Por que usar CSS? </h2> <br> 
+    O CSS é usado para definir estilos para suas páginas da web, <br>
+    incluindo o design e o layout. e variações na exibição para diferentes dispositivos e tamanhos de tela. <br>
 
-    Exemplo de CSS
+    Exemplo de CSS <br>
+    <pre>
+    <code>
     body {
     background-color: lightblue;
     }
@@ -27,75 +29,106 @@ const stageCss = {
     font-family: verdana;
     font-size: 20px;
     }
-`, "link da documentação: https://www.w3schools.com/css/css_intro.asp", "sem exercio disponivel", 600000],
-    stage2Seletores: [
+    </code>
+    </pre>
+    </span> <br>
+`, '<a href="https://www.w3schools.com/css/css_intro.asp"  target="_blank">documentação</a> <br>', "sem exercio disponivel <br>"],
+    stage2: [
         `
-        Os seletores CSS são usados ​​para "encontrar" (ou selecionar) os elementos HTML que você deseja selecionar. quero estilizar.
-        Podemos dividir os seletores CSS em cinco categorias:
+        <h1 onclick="abrirForm('stage2Css')" style="cursor: pointer;">Stage 2: Seletores</h1>
+        <span id="stage2Css" style="margin; 15px 0; display: none;> 
+        Os seletores CSS são usados ​​para "encontrar" (ou selecionar) os elementos HTML que você deseja selecionar. quero estilizar. <br>
+        Podemos dividir os seletores CSS em cinco categorias: <br>
 
-        Seletores simples (selecionam elementos com base em nome, ID e classe)
-        Seletores combinatórios (selecionar) elementos baseados em uma relação específica entre eles)
-        Seletores de pseudo-classe (selecionam elementos com base em um determinado estado)
-        Seletores de pseudo-elementos (selecionar) e estilizar uma parte de um elemento)
-        Seletores de atributos (selecione elementos com base em um atributo ou valor de atributo)
+        Seletores simples (selecionam elementos com base em nome, ID e classe) <br>
+        Seletores combinatórios (selecionar) elementos baseados em uma relação específica entre eles)<br>
+        Seletores de pseudo-classe (selecionam elementos com base em um determinado estado)<br>
+        Seletores de pseudo-elementos (selecionar) e estilizar uma parte de um elemento)<br>
+        Seletores de atributos (selecione elementos com base em um atributo ou valor de atributo)<br>
 
-        Exemplo
+        Exemplo<br>
 
-        Aqui, todos os elementos <p> da página serão Alinhado ao centro, com texto na cor vermelha:
+        Aqui, todos os elementos <p> da página serão Alinhado ao centro, com texto na cor vermelha:<br>
+        <pre>
+        <code>
         p {
         text-align: center;
         color: red;
-        } 
-        O seletor de ID CSS
+        }
+        </code>
+        </pre>
+        <br>
+        <h2>O seletor de ID CSS</h2><br>
 
-        O idO seletor utiliza o atributo id de um elemento HTML para selecionar um elemento específico.
-        O ID de um elemento é único dentro de uma página, portanto o seletor de ID é costumava ser Selecione um elemento único!
-        Para selecionar um elemento com um ID específico, escreva o caractere hash (#), seguido de o ID do elemento. 
+        O idO seletor utiliza o atributo id de um elemento HTML para selecionar um elemento específico.<br>
+        O ID de um elemento é único dentro de uma página, portanto o seletor de ID é costumava ser Selecione um elemento único!<br>
+        Para selecionar um elemento com um ID específico, escreva o caractere hash (#), seguido de o ID do elemento. <br>
 
-        Exemplo
-
+        Exemplo<br>
+        <pre>
+        <code>
         #para1 {
         text-align: center;
         color: red;
         }
+        </code>
+        </pre>
+        <br>
+        <h2>O seletor de classe CSS</h2><br>
 
-        O seletor de classe CSS
+        O classO seletor seleciona elementos HTML com um atributo de classe específico.<br>
+        Para selecionar elementos com uma classe específica, escreva um ponto (.) seguido do caractere. nome da classe. <br>
 
-        O classO seletor seleciona elementos HTML com um atributo de classe específico.
-        Para selecionar elementos com uma classe específica, escreva um ponto (.) seguido do caractere. nome da classe. 
-
-        Exemplo
-
+        Exemplo<br>
+        <pre>
+        <code>
         .center {
         text-align: center;
         color: red;
-        }    
-        `, "Link para documentação: https://www.w3schools.com/css/css_selectors.asp", "Exercicio disponivel: https://pt.anotepad.com/note/read/qiqkh8h5", 900000],
+        }
+        </code>
+        </pre>
+        </span> <br>
+        `, '<a href="https://www.w3schools.com/css/css_selectors.asp"  target="_blank">documentação</a><br>' , '<a href=" https://pt.anotepad.com/note/read/qiqkh8h5"  target="_blank">Exercicio</a>'],
 }
 
-const stageJs = {
-    "stage 1: introdução": [
+const js = {
+    stage1: [
         `
-        O que o JavaScript pode fazer?
+        <h1 onclick="abrirForm('stage1js')" style="cursor: pointer;">Stage 1: Introdução</h1><br>
+        <span id="stage1js" style="display: none; margin: 15px 0">
+        <h2>O que o JavaScript pode fazer?</h2> <br>
+        JavaScript é a linguagem de programação da web.<br>
+        Ele pode calcular, manipular e validar dados.<br>
+        Ele pode atualizar e alterar tanto HTML quanto CSS. <br>
 
-        JavaScript é a linguagem de programação da web.
-        Ele pode calcular, manipular e validar dados.
-        Ele pode atualizar e alterar tanto HTML quanto CSS. 
+        Um dos muitos métodos HTML em JavaScript é getElementById(). <br>
 
-        Um dos muitos métodos HTML em JavaScript é getElementById().
-
-        O exemplo abaixo "encontra" um elemento HTML (com id="demo"), e altera o conteúdo do elemento (innerHTML) para "Olá JavaScript": 
+        O exemplo abaixo "encontra" um elemento HTML (com id="demo"), e altera o conteúdo do elemento (innerHTML) para "Olá JavaScript": <br>
+        <pre>
+        <code>
         document.getElementById("demo").innerHTML = "Hello JavaScript";
-        
-        JavaScript pode alterar estilos HTML (CSS)
+        </pre>
+        </code>
 
-        Alterar o estilo de um elemento HTML é uma variante de alterar o próprio HTML. atributo: 
-        document.getElementById("demo").style.fontSize = "35px"; 
-        `, "Link para documentação: https://www.w3schools.com/js/js_intro.asp", "Sem exercicio Disponivel", 600000],
-    "Stage 2: Sintaxe":[
+        JavaScript pode alterar estilos HTML (CSS) <br>
+
+        Alterar o estilo de um elemento HTML é uma variante de alterar o próprio HTML. atributo: <br>
+        <pre>
+        <code>
+        document.getElementById("demo").style.fontSize = "35px";
+        </code>
+        </pre>
+        </span> 
+        `, '<a href="https://www.w3schools.com/js/js_intro.asp"  target="_blank">documentação</a><br>', "Sem exercicio Disponivel <br>"],
+    Stage2:[
         `
-        Regras de sintaxe
-        A sintaxe são as regras que definem como os programas devem ser construídos:
+        <h1 onclick="abrirForm('stage2js')" style="cursor: pointer;">Stage 2: Sintaxe</h1> <br>
+        <span id="stage2js" style="display: none; margin: 15px 0>
+        <h2>Regras de sintaxe<h2> <br>
+        A sintaxe são as regras que definem como os programas devem ser construídos: <br>
+        <pre>
+        <code>
         // Declare as variveis:
         let x = 5;
         let y = 6;
@@ -103,67 +136,93 @@ const stageJs = {
         // Calcule:
         let z = x + y;
 
-        // Eu sou um comentario, eu não sou nada 
+        // Eu sou um comentario, eu não sou nada
+        </code>
+        </pre> <br>
 
-        Valores JavaScript
+        <h2>Valores JavaScript</h2><br>
 
-        A sintaxe do JavaScript define dois tipos de valores:
+        A sintaxe do JavaScript define dois tipos de valores:<br>
 
-        Literais (Valores fixos)
-        Variáveis ​​(Valores das variáveis)
+        Literais (Valores fixos)<br>
+        Variáveis ​​(Valores das variáveis)<br>
 
-        Literais em JavaScript
+        Literais em JavaScript<br>
 
-        As regras de sintaxe mais importantes para literais (valores fixos) são:
-        Os números podem ser escritos com ou sem decimais:
-        Exemplo
+        As regras de sintaxe mais importantes para literais (valores fixos) são:<br>
+        Os números podem ser escritos com ou sem decimais:<br>
+        Exemplo<br>
+        <pre>
+        <code>
         10.50
-        1001 
+        1001
+        </code>
+        </pre> 
 
-        strings são textos escritos entre aspas duplas ou simples:
-        Exemplo
+        strings são textos escritos entre aspas duplas ou simples: <br>
+        Exemplo<br>
+        <pre>
+        <code>
         "John Doe"
 
         'John Doe'
+        </code>
+        </pre> <br>
+        <h2>Palavras-chave JavaScript</h2><br>
 
-        Palavras-chave JavaScript
+        do JavaScript As palavras-chave são usadas para definir as ações a serem executadas.<br>
 
-        do JavaScript As palavras-chave são usadas para definir as ações a serem executadas.
-
-        O let e constAs palavras-chave criam variáveis:
-        Exemplo
+        O let e constAs palavras-chave criam variáveis:<br>
+        Exemplo<br>
+        <pre>
+        <code>
         let x = 5;
 
         const fname = "John";
+        </code>
+        </pre>
 
-        ariáveis ​​em JavaScript
+        <h2>Variáveis ​​em JavaScript</h2><br>
 
-        Variáveis ​​são contêineres para armazenar valores de dados .
+        Variáveis ​​são contêineres para armazenar valores de dados .<br>
 
-        As variáveis ​​devem ser identificadas com nomes únicos .
-        Exemplo
+        As variáveis ​​devem ser identificadas com nomes únicos .<br>
+        <pre>
+        <code>
+        Exemplo<br>
+        <pre>
+        <code>
         // Define x as a variable
         let x;
 
         // Assign the value 6 to x
         x = 6;
+        </code>
+        </pre><br>
+        <h2>Operadores JavaScript</h2><br>
 
-        Operadores JavaScript
-
-        em JavaScript Os operadores de atribuição (=) atribuem valores a variáveis:
-        Exemplo
+        em JavaScript Os operadores de atribuição (=) atribuem valores a variáveis:<br>
+        Exemplo<br>
+        <pre>
+        <code>
         let x = 5;
         let y = 6;
         let sum = x + y;
-
-        JavaScript usa operadores aritméticos ( + - * / ) para calcular valores:
+        </code>
+        </pre><br>
+        JavaScript usa operadores aritméticos ( + - * / ) para calcular valores:<br>
+        <pre>
+        <code>
         Exemplo
         5 * 10
-        `, "link para documentação: https://www.w3schools.com/js/js_syntax.asp", " exercicio disponivel: https://pt.anotepad.com/note/read/t237ic9d", 1500000]
+        </code>
+        </pre>
+        </span>
+        `, '<a href="https://www.w3schools.com/js/js_syntax.asp"  target="_blank">documentação</a><br>', '<a href="https://pt.anotepad.com/note/read/t237ic9d"  target="_blank">Exercicio</a><br>']
 }
 
-const stageHtml = {
-    "stage 1: Introdução": [
+const html = {
+    stage1: [
         `
         O que é HTML?
 
@@ -207,7 +266,7 @@ const stageHtml = {
         < h1 > Meu Primeiro título</h1> 
         <p> Meu primeiro parágrafo </p> 
         `, "Link para documentação: https://www.w3schools.com/html/html_intro.asp", "Exercicio disponivel: https://pt.anotepad.com/note/read/qwsai3wp", 480000],
-        "stage 2: Basico": [
+        stage2: [
             `
             Títulos HTML
 
@@ -250,8 +309,16 @@ const stageHtml = {
 //os stages são um obj, na chave ha um array onde [0] é o descrição onde o aluno vai ler, [1] link pra documentação, [2] o exercicio e o [3] o tempo exigido para aql stage
 
 const professores = {
-    dayson:[],
-    manel:[],
+    davyson:{
+        css:['<a href="https://youtu.be/aWzKb071D9o?si=Lu_aE598asHqruW0" target="_blank">Video aula</a>'],
+        js:["https://youtu.be/T4P_BQdWtRg?si=PhK2eukZHBLHi0l5"],
+        html:["https://youtu.be/kOz4ynZs_KY?si=de9lPf8_2L04pUz0"]
+    },
+    manel:{
+        css:['<a href="https://youtu.be/dQw4w9WgXcQ?si=MuBaGnTjJl1TeZ0q" target="_blank">Video aula</a>'],
+        js:["https://youtu.be/jjpYAZXRGtw?si=QDJnZoruYOXm6L4Q"],
+        html:["https://youtu.be/nGeBJsA67sg?si=uNUIhRXgkkeraEon"]
+    }
 }
 
 function criarGuia(curso){
@@ -267,7 +334,29 @@ function criarGuia(curso){
     let tempoDisponivelCorventido = tempoDisponivelParaEstudo % 60
 
     //Exibir guia
-    const divResultado = document.createElement("div").setAttribute("id", "Div-pai-Guia")
+    let mapaDeCursos = { css, html, js}  // ajuda abuscar os objs com o parametro
+
+    const divResultado = document.getElementById('div')
+    const cronometroPagina = document.createElement("div")
+    cronometroPagina.setAttribute("class", "cronometro")
+    const guiaMostrar = document.createElement("div")
+    guiaMostrar.setAttribute("class", "guia")
+    let conteudoDosStages = ""
+    let professorFormatado = professores[professor]
+    console.log(professor)
+    console.log(professorFormatado[curso])
+    let cursoFormatado = mapaDeCursos[curso]
+    Object.values(cursoFormatado).forEach(conteudo => {
+        conteudo.forEach(item =>{
+            conteudoDosStages += `${item}`
+        })
+    })
+    console.log(conteudoDosStages)
+    guiaMostrar.innerHTML = conteudoDosStages
+    divResultado.appendChild(guiaMostrar)
+    guiaMostrar.scrollIntoView({
+        behavior: "smooth"
+    })
 }
 
 let ms
@@ -310,8 +399,6 @@ function finalizar(){
         alert("estudo finalizado!")
     }
 }
-
-cronometro(60)
 
 
 
